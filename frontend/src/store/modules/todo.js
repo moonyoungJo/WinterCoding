@@ -64,36 +64,36 @@ export default handleActions({
   ...pender({
     type: GET_TODO_LIST,
     onSuccess: (state, action) => {
-      let newState = state.set('todos', fromJS(action.payload.data));        
+      let newState = state.set('todos', fromJS(action.payload.data));   
+      newState = setOutdatedTodos(newState);     
       newState = sortState(newState, state.get('sortTarget'));
-      newState = setOutdatedTodos(newState);
       return newState;
     }
   }),
   ...pender({
     type: WRITE_TODO,
     onSuccess: (state, action) => {
-      let newState = state.set('todos', fromJS(action.payload.data));        
+      let newState = state.set('todos', fromJS(action.payload.data));  
+      newState = setOutdatedTodos(newState);      
       newState = sortState(newState, state.get('sortTarget'));
-      newState = setOutdatedTodos(newState);
       return newState;
     }
   }),
   ...pender({
     type: DELETE_TODO,
     onSuccess: (state, action) => {
-      let newState = state.set('todos', fromJS(action.payload.data));        
+      let newState = state.set('todos', fromJS(action.payload.data));  
+      newState = setOutdatedTodos(newState);      
       newState = sortState(newState, state.get('sortTarget'));
-      newState = setOutdatedTodos(newState);
       return newState;
     }
   }),
   ...pender({
     type: UPDATE_TODO,
     onSuccess: (state, action) => {
-      let newState = state.set('todos', fromJS(action.payload.data));        
+      let newState = state.set('todos', fromJS(action.payload.data));    
+      newState = setOutdatedTodos(newState);    
       newState = sortState(newState, state.get('sortTarget'));
-      newState = setOutdatedTodos(newState);
       return newState;
     }
   }),

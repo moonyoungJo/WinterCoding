@@ -3,13 +3,13 @@
 .todoList-wrapper{
   
   width: 100%;
-  height: 515px;
+  height: 100%;
   .todoList-padding{
     
     box-sizing: border-box;
     padding: 1.3rem;
     width: 100%;
-    height: 100%;
+    height: 85%;
     overflow-y: scroll;
   }
 }

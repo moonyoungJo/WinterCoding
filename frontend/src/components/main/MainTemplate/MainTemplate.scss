@@ -15,9 +15,8 @@
 .main-content-wrapper{
   z-index: 10;
   position: fixed;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   border-radius: 1rem;
 
   padding-top : 1rem;
@@ -29,29 +28,30 @@
   @include media("<medium"){
     width:90%;
   }
+  height: 90%;
 
   //상단의 글자
   .main-title{
     text-align: center;
-    padding: 2rem;
+    padding: 0.5rem;
     .main-word{
       font-family: 'Satisfy', cursive;
-      font-size: 3rem;
+      font-size: 2.7rem;
       color: #fee;
       text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #42d0f3, 0 0 0.5em #2d4b83, 0 0 0.1em #094e5f, 0 10px 3px #000;
       
       @include media("<medium"){
-        font-size: 2.2rem;
+        font-size: 2.1rem;
       }
     }
     .sub-word{
       font-family: 'Satisfy', cursive;
-      font-size: 2.2rem;
+      font-size: 2.0rem;
       color: #fee;
       text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #42d0f3, 0 0 0.5em #2d4b83, 0 0 0.1em #094e5f, 0 10px 3px #000;
       
       @include media("<medium"){
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
     .writer-word{
@@ -68,7 +68,7 @@
   .main-content{
     background: white;
     border-radius: 0.25rem;
-    height: 580px;
+    height: 75%;
     padding: 0.5rem;
     margin-bottom: 2rem;
   }
