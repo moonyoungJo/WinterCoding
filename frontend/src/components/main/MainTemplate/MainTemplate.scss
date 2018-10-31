@@ -1,0 +1,75 @@
+@import 'src/styles/utils';
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+.main-background{
+  @include background-pattern();
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.main-content-wrapper{
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+
+  padding-top : 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+
+  width: 700px;
+  @include media("<medium"){
+    width:90%;
+  }
+
+  //상단의 글자
+  .main-title{
+    text-align: center;
+    padding: 2rem;
+    .main-word{
+      font-family: 'Satisfy', cursive;
+      font-size: 3rem;
+      color: #fee;
+      text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #42d0f3, 0 0 0.5em #2d4b83, 0 0 0.1em #094e5f, 0 10px 3px #000;
+      
+      @include media("<medium"){
+        font-size: 2.2rem;
+      }
+    }
+    .sub-word{
+      font-family: 'Satisfy', cursive;
+      font-size: 2.2rem;
+      color: #fee;
+      text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #42d0f3, 0 0 0.5em #2d4b83, 0 0 0.1em #094e5f, 0 10px 3px #000;
+      
+      @include media("<medium"){
+        font-size: 1.8rem;
+      }
+    }
+    .writer-word{
+      font-size: 1.5rem;
+      color: #fee;
+      text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #42d0f3, 0 0 0.5em #2d4b83, 0 0 0.1em #094e5f, 0 10px 3px #000;
+      
+      @include media("<medium"){
+        font-size: 1.2rem;
+      }
+    }
+  }
+  //content
+  .main-content{
+    background: white;
+    border-radius: 0.25rem;
+    height: 580px;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}

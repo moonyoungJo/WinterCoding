@@ -1,0 +1,18 @@
+@import 'src/styles/utils';
+
+.controlLine-wrapper{
+  padding: 1rem;
+  overflow: hidden;
+  .controlLine-addTodo{
+    float: left;
+    padding-left: 0.3rem;
+  }
+  .controlLine-sortSelect{
+    float: right;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: $oc-gray-7;
+  }
+}

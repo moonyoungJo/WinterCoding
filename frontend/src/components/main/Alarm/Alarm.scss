@@ -1,0 +1,50 @@
+@import 'src/styles/utils';
+
+.alarm-wrapper{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: $oc-gray-6;
+  overflow: hidden;
+  padding-top: 0.3rem;
+  
+  .alarm-title{
+    float: left;
+    font-weight: bold;
+    color: $oc-gray-8;
+
+  }
+  .alarm-delete{
+    float: right;
+    margin-left: 1rem;
+  }
+  .alarm-priority{
+    float: right;
+    margin-right: 0.2rem;
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+  .priority-first{
+    background-color: $oc-orange-8;
+  }
+  .priority-second{
+    background-color: $oc-yellow-6;
+  }
+  .priority-third{
+    background-color: $oc-lime-7;
+  }
+  .alarm-date{
+    clear: both;
+    text-align: right;
+    color: $oc-gray-8;
+  }
+}

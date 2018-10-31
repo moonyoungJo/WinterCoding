@@ -1,0 +1,72 @@
+@import 'src/styles/utils';
+
+.todo-wrapper{
+  width: 100%;
+  box-sizing: border-box;
+  padding : 0.5rem;
+  margin-bottom: 0.7rem;
+  border-radius: 0.3rem;
+  border-style : solid;
+  border-color: $oc-cyan-9;
+  border-width: 3px;
+
+  // 상단 정보
+  .todo-infoContainer{
+    overflow: hidden;
+    width: 100%;
+
+    .todo-delete{
+      float: right;
+    }
+    .todo-modify{
+      float: right;
+      margin-right: 10px;
+    }
+    .todo-buttonSize{
+      font-size: 1rem;
+    }
+    .todo-priority{
+      float: right;
+      margin-right: 1rem;
+      margin-top: 5px;
+      color: white;
+      text-align: center;
+      width: 1.7rem;
+      height: 1.7rem;
+      border-radius: 50%;
+    }
+    .priority-first{
+      background-color: $oc-orange-8;
+    }
+    .priority-second{
+      background-color: $oc-yellow-6;
+    }
+    .priority-third{
+      background-color: $oc-lime-7;
+    }
+
+    .todo-date{
+      float: right;
+      margin-right: 2rem;
+      margin-top: 5px;
+    }
+    .todo-title{
+      font-size: 1.3rem;
+      margin-left: 1rem;
+      font-weight: bold;
+      color: $oc-gray-8;
+    }
+  }
+  // 내용
+  .todo-content{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 3px;
+    padding: 0.3rem;
+  }
+  
+}
+.todo-outdate{
+  background-color: $oc-gray-2;
+  
+}

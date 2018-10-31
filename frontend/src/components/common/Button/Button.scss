@@ -1,0 +1,52 @@
+@import 'src/styles/utils';
+
+.button{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 0.25rem;
+  color: white;
+  user-select: none;
+  display: inline-flex;
+
+  &.default{
+    background: $oc-cyan-8;
+    &:hover{
+      background: $oc-cyan-5;
+    }
+    &:active{
+      background: $oc-cyan-5;
+    }
+  }
+
+  &.dark{
+    background: $oc-cyan-9;
+    &:hover{
+      background: $oc-cyan-5;
+    }
+    &:active{
+      background: $oc-cyan-5;
+    }
+  }
+
+  
+
+  &.disabled{
+    background: $oc-gray-4;
+    color: $oc-gray-6;
+    cursor: default;
+    &:hover, &:active{
+      box-shadow: none;
+      color: $oc-gray-6;
+      background: $oc-gray-4;
+    }
+  }
+
+  //버튼 두개가 연속으로 있을 경우
+  &+&{
+    margin-left:0.5rem;
+  }
+}
